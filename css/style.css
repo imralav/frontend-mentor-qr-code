@@ -1,0 +1,29 @@
+body {
+  background-color: #d6e2f0;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #1f3251;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template: 31.5rem / 20rem;
+  justify-content: center;
+  align-content: center; }
+  body main.main-container {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem; }
+    body main.main-container img.qr-code-img {
+      border-radius: 0.6rem;
+      width: 100%; }
+    body main.main-container div.qr-code-descriptions {
+      padding: 0 0.5rem; }
+      body main.main-container div.qr-code-descriptions h1.header {
+        font-size: 1.4rem; }
+      body main.main-container div.qr-code-descriptions p.description {
+        font-size: 1rem;
+        color: #7b879d; }
