@@ -1,0 +1,18 @@
+on: [push, workflow_dispatch]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+    steps:
+      - name: Hello world action step
+        id: hello
+        uses: imralav/actions@v1.1
+        with:
+          who-to-greet: 'Mona the Octocat'
+          who-not-to-greet: 'Your mom'
+      # Use the output from the `hello` step
+      - name: Get the output time
+        run: echo "The time was ${{ steps.hello.outputs.time }}"
+      - name: See who to dislike
+        run: echo "We dislike: ${{ steps.hello.outputs.who-to-dislike }}"
