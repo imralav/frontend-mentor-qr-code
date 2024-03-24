@@ -18,3 +18,7 @@ jobs:
         run: echo "The time was ${{ steps.hello.outputs.time }}"
       - name: Who to dislike
         run: echo "Let's dislike ${{ steps.hello.outputs.who-to-dislike }}"
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: greet again
+        run: node ./elo.js
