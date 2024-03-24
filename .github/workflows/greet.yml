@@ -1,4 +1,7 @@
 on: [push, workflow_dispatch]
+env:
+  ARTIFACT_NAME: greeting-file2
+  ARTIFACT_FILE_NAME: greeting2.md
 
 jobs:
   hello_world_job:
@@ -23,12 +26,12 @@ jobs:
       - name: greet again
         run: node ./elo.js
       - name: output something to file
-        run: echo "# no siemka znowu" >> greeting.md
+        run: echo "# no siemka znowu v2" >> $ARTIFACT_FILE_NAME
       - name: upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: greeting-file
-          path: greeting.md
+          name: ${{ env.ARTIFACT_NAME }}
+          path: ${{ env.ARTIFACT_FILE_NAME }}
   hello_otherworld_job:
     runs-on: ubuntu-latest
     needs: hello_world_job
@@ -36,6 +39,6 @@ jobs:
       - name: download the greeting
         uses: actions/download-artifact@v4
         with:
-          name: greeting-file
+          name: ${{ env.ARTIFACT_NAME }}
       - name: read greeting
-        run: cat greeting.md
+        run: cat $ARTIFACT_FILE_NAME
