@@ -14,5 +14,5 @@ jobs:
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
-      - name: See who to dislike
-        run: echo "We dislike: ${{ steps.hello.outputs.who-to-dislike }}"
+      - name: Who to dislike
+        run: echo "Let's dislike ${{ steps.hello.outputs.who-to-dislike }}"
