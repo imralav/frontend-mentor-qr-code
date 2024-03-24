@@ -1,3 +1,3 @@
 # frontend-mentor-qr-code
 
-[siema workflow](https://github.com/imralav/frontend-mentor-qr-code/.github/workflows/greet.yml/badge.svg?branch=main)
+[![.github/workflows/greet.yml](https://github.com/imralav/frontend-mentor-qr-code/actions/workflows/greet.yml/badge.svg)](https://github.com/imralav/frontend-mentor-qr-code/actions/workflows/greet.yml)
