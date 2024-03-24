@@ -1,6 +1,6 @@
 body {
   background-color: #d6e2f0;
-  font-family: "Outfit", sans-serif;
+  font-family: Outfit, sans-serif;
   font-weight: 400;
   font-size: 15px;
   margin: 0;
@@ -11,8 +11,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template: 31.5rem / 20rem;
-  justify-content: center;
-  align-content: center; }
+  place-content: center center; }
   body main.main-container {
     background-color: white;
     padding: 1rem;

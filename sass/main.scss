@@ -1,28 +1,25 @@
 $mobile: 375px;
 $desktop: 1440px;
 $test: 500px;
-
-$white: hsl(0, 0%, 100%);
-$light-gray: hsl(212, 45%, 89%);
-$grayish-blue: hsl(220, 15%, 55%);
-$dark-blue: hsl(218, 44%, 22%);
+$white: hsl(0deg, 0%, 100%);
+$light-gray: hsl(212deg, 45%, 89%);
+$grayish-blue: hsl(220deg, 15%, 55%);
+$dark-blue: hsl(218deg, 44%, 22%);
 
 body {
   background-color: $light-gray;
-  font-family: "Outfit", sans-serif;
+  font-family: Outfit, sans-serif;
   font-weight: 400;
   font-size: 15px;
   margin: 0;
   padding: 0;
   text-align: center;
   color: $dark-blue;
-
   width: 100vw;
   height: 100vh;
   display: grid;
   grid-template: 31.5rem / 20rem;
-  justify-content: center;
-  align-content: center;
+  place-content: center center;
 
   main.main-container {
     background-color: $white;
